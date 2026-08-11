@@ -1,32 +1,34 @@
-# ATHAR Store - Premium Arabic Digital Products E-Commerce Platform
+# أثر | ATHAR Store
+
+**Premium Arabic Digital Products E-Commerce Platform**
 
 متجر أثر - متجر متقدم لبيع المنتجات الرقمية
 
-## 🎯 Overview
+## 🎯 نظرة عامة
 
-ATHAR Store is a production-ready, premium digital products e-commerce platform targeting the Arabic-speaking market. Built with Next.js, TypeScript, and Tailwind CSS, with a focus on conversion, accessibility, and beautiful RTL design.
+ATHAR Store هو منصة متقدمة وجاهزة للإنتاج لبيع المنتجات الرقمية موجهة للسوق العربية. مبنية بـ Next.js و TypeScript و Tailwind CSS مع التركيز على التحويل والوصول والتصميم الجميل للكتابة من اليمين لليسار.
 
-### Key Features
+## ✨ المميزات الرئيسية
 
-- ✨ **Premium Design** - Black + cream + gold brand identity
-- 🌍 **Arabic-First** - Full RTL support, Arabic typography
-- 📱 **Mobile-First** - Optimized for mobile devices
-- 🛒 **E-Commerce** - Complete product catalog, shopping cart, checkout
-- 💳 **Payment Ready** - Modular payment architecture (mock + PayTabs support)
-- 📥 **Digital Delivery** - Secure download system with expiring tokens
-- 🔒 **Security First** - Server-side validation, PCI-compliant payment handling
-- ⚡ **Performance** - Image optimization, code splitting, SSR/SSG
-- ♿ **Accessible** - WCAG 2.1 compliance, semantic HTML
-- 📊 **SEO-Friendly** - Structured data, meta tags, sitemaps
-- 🏗️ **Scalable** - Modular architecture ready for expansion
+- **تصميم فاخر** - هوية سوداء + كريم + ذهبية
+- **اتجاه عربي أول** - دعم كامل RTL وخطوط عربية
+- **محمول أولاً** - محسّن للأجهزة المحمولة
+- **التجارة الإلكترونية** - كتالوج منتجات كامل وسلة تسوق وخروج
+- **جاهز للدفع** - معمارية دفع معيارية (mock + PayTabs)
+- **التسليم الرقمي** - نظام تنزيل آمن برموز انتهاء الصلاحية
+- **الأمان أولاً** - التحقق من جانب الخادم
+- **الأداء** - تحسين الصور وتقسيم الأكواد
+- **الوصول** - توافق WCAG 2.1
+- **صديق SEO** - بيانات منظمة والعلامات الوصفية
+- **قابل للتطوير** - معمارية معيارية جاهزة للتوسع
 
-## 🚀 Quick Start
+## 🚀 البدء السريع
 
-### Prerequisites
+### المتطلبات المسبقة
 - Node.js 18+
 - PostgreSQL 14+
 
-### Installation
+### التثبيت
 
 ```bash
 git clone https://github.com/basarabdullh-code/athar-store.git
@@ -36,68 +38,63 @@ cp .env.example .env.local
 npm run dev
 ```
 
-Visit `http://localhost:3000`
+زيارة `http://localhost:3000`
 
-## 📁 Project Structure
+## 📁 هيكل المشروع
 
 ```
 src/
-├── app/               # Next.js app directory
-├── components/        # Reusable components
-├── lib/              # Utilities & logic
-├── types/            # TypeScript types
-├── hooks/            # Custom hooks
-└── styles/           # Global styles
+├── app/              # Next.js app directory
+├── components/       # مكونات قابلة لإعادة الاستخدام
+├── lib/             # أدوات ومنطق مشترك
+├── types/           # أنواع TypeScript
+├── hooks/           # hooks مخصص
+└── styles/          # أنماط عامة
 ```
 
-## 🎨 Brand Colors
+## 🎨 ألوان العلامة التجارية
 
-- **Primary**: #000000 (Deep Black)
-- **Secondary**: #F5F1E8 (Warm Cream)
-- **Accent**: #D4AF37 (Premium Gold)
+- **أساسي**: #000000 (أسود عميق)
+- **ثانوي**: #F5F1E8 (كريم دافئ)
+- **لهجة**: #D4AF37 (ذهبي فاخر)
 
-## 🔐 Security
+## 🔐 الأمان
 
-- ✅ Never store raw card information
-- ✅ Server-side payment verification
-- ✅ Environment variables for secrets
-- ✅ Secure download tokens
-- ✅ Input validation with Zod
+- ✅ عدم تخزين معلومات بطاقة الائتمان الخام
+- ✅ التحقق من الدفع من جانب الخادم
+- ✅ متغيرات البيئة للأسرار
+- ✅ رموز تنزيل آمنة
+- ✅ التحقق من الإدخال مع Zod
 
-## 📦 Tech Stack
+## 📦 مكدس التكنولوجيا
 
-- **Frontend**: Next.js 14, React 18, TypeScript
-- **Styling**: Tailwind CSS
-- **Backend**: Next.js API Routes
-- **Database**: PostgreSQL + Prisma ORM
-- **Auth**: NextAuth.js
-- **Payment**: PayTabs (modular)
-- **Storage**: Supabase Storage / AWS S3
-- **Deployment**: Vercel
+| الطبقة | التكنولوجيا |
+|-------|----------|
+| **الواجهة الأمامية** | Next.js 14, React 18, TypeScript |
+| **التصميم** | Tailwind CSS |
+| **الخادم** | Next.js API Routes |
+| **قاعدة البيانات** | PostgreSQL + Prisma ORM |
+| **المصادقة** | NextAuth.js |
+| **الدفع** | PayTabs (معياري) |
+| **التخزين** | Supabase Storage / AWS S3 |
+| **النشر** | Vercel |
 
-## 📄 Documentation
-
-- [Architecture Plan](./docs/ARCHITECTURE.md)
-- [Database Schema](./docs/DATABASE.md)
-- [API Routes](./docs/API.md)
-- [Payment Integration](./docs/PAYMENT.md)
-
-## 🚀 Development
+## 🚀 التطوير
 
 ```bash
-npm run dev              # Start dev server
-npm run build            # Build for production
-npm start                # Start production server
-npm run prisma:studio    # Database browser
-npm run lint             # Run linter
+npm run dev              # بدء خادم التطوير
+npm run build            # البناء للإنتاج
+npm start                # بدء خادم الإنتاج
+npm run prisma:studio    # متصفح قاعدة البيانات
+npm run lint             # تشغيل الفحص
 ```
 
-## 📄 License
+## 📄 الترخيص
 
-All rights reserved. Proprietary to ATHAR brand.
+جميع الحقوق محفوظة. ملكية لعلامة ATHAR التجارية.
 
 ---
 
-**Built with ❤️ for the Arabic-speaking market**
+**مبني بـ ❤️ للسوق الناطق بالعربية**
 
-Last Updated: August 2026
+آخر تحديث: أغسطس 2026

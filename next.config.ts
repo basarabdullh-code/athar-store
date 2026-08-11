@@ -27,12 +27,6 @@ const nextConfig: NextConfig = {
       },
     ];
   },
-  async redirects() {
-    return [];
-  },
-  async rewrites() {
-    return { beforeFiles: [], afterFiles: [], fallback: [] };
-  },
 };
 
 export default nextConfig;
