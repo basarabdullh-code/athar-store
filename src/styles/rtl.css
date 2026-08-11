@@ -1,0 +1,75 @@
+.ml-auto {
+  margin-left: auto;
+  margin-right: 0 !important;
+}
+
+.mr-auto {
+  margin-right: auto;
+  margin-left: 0 !important;
+}
+
+.icon-before {
+  margin-left: 0.5rem;
+  margin-right: 0;
+}
+
+.icon-after {
+  margin-right: 0.5rem;
+  margin-left: 0;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.shadow-rtl-right {
+  box-shadow: -2px 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.border-left {
+  border-left: none;
+  border-right: 1px solid #cccccc;
+}
+
+.border-right {
+  border-right: none;
+  border-left: 1px solid #cccccc;
+}
+
+@keyframes slideFromRight {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideFromLeft {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.animate-slide-from-right {
+  animation: slideFromRight 400ms ease-in-out;
+}
+
+.animate-slide-from-left {
+  animation: slideFromLeft 400ms ease-in-out;
+}
